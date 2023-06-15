@@ -1,0 +1,233 @@
+body{
+	background-color: lightblue;
+}
+
+.title{
+	text-align: center;
+}
+#line1 {
+	border: solid black;
+	color: black;
+}
+
+.filter-section{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+}	/*width: 80%;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.leftdiv{
+	float: left;
+	text-align: center;
+	display: inline;
+    flex-basis: calc(100% / 3);
+	margin: auto;
+}
+
+.rightdiv{
+	float: right;
+	text-align: center;
+	display: inline;
+    flex-basis: calc(100% / 3);
+	margin: auto;
+}
+*/
+.filter-button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	/*flex-basis: 100%;
+	text-align: center;*/
+}
+.filter{
+	width: 70px;
+	height: 30px;
+}
+
+.all{
+	padding: 5px;
+	background-color: #0077b6;
+	display: flex;
+	position: relative;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	
+
+	
+}
+.wrap1{
+	margin-bottom: 10px;
+	justify-content: space-around;
+	border: 5px  ;
+	background-color: #00b4d8;
+	border-radius: 40px;
+	display: flex;
+	position: relative;
+	padding: 3px;
+	width: 680px;
+	height: 330px;
+
+}
+
+.wrap2{
+	flex-direction: row;
+	justify-content: space-around;
+	border: 5px solid black;
+	background-color: #ADD8E6;
+	display: flex;
+	position: relative;
+	padding: 10px;
+	
+}
+
+.hall{
+	
+	float: left;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.hall img{
+	
+	border-radius: 40px 0px 0px 40px;
+	max-width:100%;
+}
+.spec{
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 5px;
+	width: auto;
+	padding: 5px;
+	display: flex;
+}
+.spec h1{ 
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: auto;
+	color: white;
+}
+
+.spec-hr{
+	border: solid #0077b6;
+	width: 100%;
+	margin-top:0;
+	margin-bottom: 0;
+}
+
+
+
+.details{
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-around;
+	color: white;
+}
+
+
+.details-1{
+	position: relative;
+	border-radius: 25px;
+	background-color:lightblue;
+	float:left;
+	text-align: center;
+	line-height: 1.5;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.detail1-A1{
+	margin: 0;
+	
+}
+.details-2{
+	margin-left: 5px;
+	border-radius: 25px;
+	background-color: lightblue;
+	text-align: center;
+	width: 70%;
+}
+
+.details-21{
+	
+	display: flex;
+	margin-top: 5px;
+	text-align: center;
+	justify-content: space-between;
+}
+.ShowTimings{
+	margin-top:10px ;
+	border-radius: 20px;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 10px ;
+	
+}
+
+.spec-bottom{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px;
+	align-items: center;
+	color: white;
+}
+
+.spec-bottom-required{
+	position: relative;
+	background-color:lightblue;
+	border-radius: 25px;
+	float: left;
+	text-align: center;
+	padding: 5px;
+	margin-right: 5px;
+}
+
+.required{
+	color: #0077b6;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.spec-bottom-date{
+	width:fit-content;
+	position: relative;
+	background-color:lightblue;
+	border-radius: 25px;
+	float: right;
+	text-align: center;
+	padding: 5px;
+}
+
+.available-date{
+	color: #0077b6;
+}
+
+.book-now-button{
+	display: flex;
+	position: relative;
+	
+	justify-content: center;
+	width: 100%;	
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+
+
+.book{
+	padding-left: 10px;
+	padding-right: 10px;
+	width: auto;
+	height: 30px;
+	border-radius: 25px;
+	background-color: lightblue;
+	border: 0;
+	color: white;
+}
+	

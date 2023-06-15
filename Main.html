@@ -1,0 +1,137 @@
+<html>
+<title>Hall Booking</title>
+
+<head>
+
+<link rel="stylesheet" href="styles.css">
+<link href="css/mobiscroll.jquery.min.css" rel="stylesheet" />
+<script src="js/mobiscroll.jquery.min.js"></script>
+
+
+</head>
+
+
+<body>
+<h1 class="title" id="title1">Hall Allocation</h1>
+<hr id="line1" size="2">
+
+<div class="filter-section">
+<div class ="leftdiv">
+<label for="hall">Choose a Hall:</label>
+<select id="hall" name="hall" onchange="onFilter(this.value)">
+	<option value="none">Choose a Hall</option>
+	<option value="0">Seminar Hall</option>
+	<option value="1">Main seminar Hall</option>
+	<option value="2">Heritage Hall</option>
+	<option value="3">Tifac Hall</option>
+	<option value="4">Purple Hall</option>
+</select>
+</div>
+
+<div class ="rightdiv">
+<label for="date">Date:</label>
+<input type="datetime-local" id="edate" name="edate" >
+</div>
+
+</div>
+<div class="filter-button">
+	<button class="filter" onclick="">Refresh</button>
+	<p ></p>
+</div>
+<hr id="line1" size="2">
+
+<div class="all" >
+<div class="wrap1 grape hide" >
+	<div class="hall ">
+		<img id='img1' class='img1 ' src="images/hall1.jpg">
+	</div>
+	<div class="spec">
+		<h1 id="title" class="title text-color">Seminar hall</h1>
+		<hr class ='spec-hr'>
+		<div class="details">
+			<div class="details-1 text-color">
+				<p id="Block" class= "Block detail1-A1">Block: A</p>
+				<p id="Capacity" class= "Capacity detail1-A1">Capacity: 200</p>
+				<p id="AC" class= "AC detail1-A1">AC: Available</p>
+			</div>
+
+			<div class="details-2 text-color">
+				<div class="details-21">
+					<div class="divsTime">
+						<label class="lsTime" for="sTime" value="22:00">Start Time</label>
+						<input type="time" name="sTime" class="sTime"><br>
+					</div>
+					<div class="diveTime">
+						<label class="leTime" for="eTime">End Time</label>
+						<input type="time" name="eTime" class="eTime">
+					</div><br>
+				</div>
+					<textarea class="ShowTimings" name="sTimings" placeholder="Events"  rows="3" cols="14" ></textarea>
+				
+			</div>
+		</div>
+
+		<div class="spec-bottom">
+			<div class="spec-bottom-required">
+				<label for="required" class="requiredLabel text-color">Requirements </label>
+				<textarea class="required" name="required" rows="3" cols="15" ></textarea>
+			</div>
+			<div class="spec-bottom-date">
+				<label for="available-date" class="dateLabel text-color">Available Dates:</label>
+				<input type="date" id="available-date" class="available-date" name="available-date" >
+			</div>
+		</div>
+		<div class="book-now-button">
+			<button type="button" onclick="myFunction()" class="book"><b>Book now<b></button>
+		</div>
+	</div>
+</div>
+				<!-- <p id="Block" class= " detail1-A1">Block: A</p>
+				<p id="Capacity" class= " detail1-A1">Capacity: 200</p>
+				<p id="AC" class= " detail1-A1">AC: Available</p> -->
+<!---
+<div class="wrap2">
+	<div class="hall">
+		<img src="F:\class\SEM 5\ip\Project Hall allocation\images\hall1.jpg">
+	</div>
+	<div class="spec">
+		<h1 id="title" class="title">gg</h1>
+	
+		<hr>
+		<div class="details">
+		<div class="detail1-Q">
+			<p id="Block" class= " detail1-A1"></p>
+			<p id="Capacity" class= " detail1-A1"></p>
+			<p id="AC" class= " detail1-A1"></p>
+		</div>
+		<div class="detail1-A">
+			<p id="Block" class= " detail1-A1"></p>
+			<p id="Capacity" class= " detail1-A1"></p>
+			<p id="AC" class= " detail1-A1"></p>
+			
+		</div>
+		</div>
+
+		<div class="spec-bottom">
+			<div class="spec-bottom-required">
+				<label for="required">Requirements </label><br>
+				<textarea class="required" name="required" rows="5" cols="28" ></textarea>
+			</div>
+			<div class="spec-bottom-date">
+				<label for="date">Available Dates:</label><br>
+				<input type="date" id="available-date" name="available-date"><br>
+			</div>
+		</div>
+			<div class="book-now-button">
+				<button type="button" id="book">Book now</button>
+			</div>
+		
+
+	</div>
+</div>
+-->
+</div>
+<script src="myscripts.js"></script>
+
+</body>
+</html>	
